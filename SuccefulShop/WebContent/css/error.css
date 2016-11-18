@@ -1,0 +1,19 @@
+@CHARSET "UTF-8";
+
+body {
+  background: url(../images/error.jpg) 120% 25% no-repeat;
+  background-color: white;
+  background-size: cover;
+}
+
+div {
+	position: absolute;
+	font-family: Georgia, Verdana, Arial, serif;
+	font-size: 48pt;
+	color: red;
+	text-align: left;
+	margin-left: 50px;
+    top: 40%;
+	
+
+}

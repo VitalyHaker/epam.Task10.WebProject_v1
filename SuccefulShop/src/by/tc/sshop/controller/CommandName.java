@@ -1,0 +1,7 @@
+package by.tc.sshop.controller;
+
+enum CommandName {
+    LOGIN, REGISTER, LOG_OUT, USER_PAGE, VIEW_BIKES, BIKE_BY_ID,
+    ADD_BIKE, UPDATE_BIKE, BIKES_BY_BRAND, BIKES_BY_WHEELDIAM,
+    ADD_COMMENT, VIEW_USERS, VIEW_USER
+}

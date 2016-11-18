@@ -1,0 +1,81 @@
+@CHARSET "UTF-8";
+
+#logo {
+  height: 114px;
+  left: 8px;
+  position: fixed;
+  top: 8px;
+  width: 150px;
+}
+
+h1 {
+  color: #735249;
+  font-size: 36pt;
+  font-family: Trebuchet MS, Georgia, Times, serif;
+  font-weight: 300; 
+  right: 8px;
+  text-align: center;
+}
+
+#regAuth {
+  position: fixed;
+  right: 8px;
+  text-align: right;
+  top: 8px;
+}
+
+a:hover {font-size:17px; font-weight: bold; color:Tomato; text-decoration: underline}
+a:link {font-size:16px; color:#E5AD96; text-decoration: none}
+a:visited {font-size:16px; color:DarkRed}
+
+nav {
+  left: 35px;
+  position: absolute;
+  top: 140px;
+}
+
+body {
+  background: url(../images/backAuthReg.jpg) 120% 25% no-repeat;
+  background-color: #FFE79B;
+  background-size: cover;
+  color: #3F3930; 
+  height: 100%;
+  font-family: Georgia, Verdana, Arial, serif;
+  font-size: 12pt;
+  margin: 0;
+}
+
+footer {
+  bottom: 0;  
+  left: 0;
+  position: absolute;
+  width: 100%;
+}
+
+#rights {
+  right: 8px;
+  text-align: right;
+}
+
+table { 
+  width: 40%;  
+  border: 2;
+  margin: auto;
+  vertical-align: middle;
+  border-spacing: 10;
+  padding: 10; 
+  border: 5px double #000;
+}
+
+th { 
+  font-size: 20pt; 
+  background-color: #75726B; 
+  line-height: 200%;
+}
+
+td { 
+  background-color: #A09C93; 
+  border: 2px double #CCC8B7;
+  width: 25%;
+}
+
