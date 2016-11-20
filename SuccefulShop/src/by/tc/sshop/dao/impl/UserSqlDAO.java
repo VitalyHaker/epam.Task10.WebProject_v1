@@ -189,7 +189,7 @@ public class UserSqlDAO implements UserDAO {
         }
     }
 
-    public User viewUserLogin(String login) throws DAOException {
+    public User viewUserByLogin(String login) throws DAOException {
         Connection con = null;
         PreparedStatement st = null;
         ResultSet rs = null;
@@ -245,14 +245,4 @@ public class UserSqlDAO implements UserDAO {
         }
     }
 
-	@Override
-	public User register(String login, String pass, String email, String phone, int balance, int coupon, String fname,
-			String lname, Date birth) throws DAOException {
-		return null;
-	}
-
-	@Override
-	public User viewUserByLogin(String login) throws DAOException {
-		return null;
-	}
 }

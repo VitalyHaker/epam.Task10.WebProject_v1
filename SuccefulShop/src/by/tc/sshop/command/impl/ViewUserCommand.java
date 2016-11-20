@@ -22,7 +22,7 @@ public class ViewUserCommand implements Command {
 	private static final String USER_PAGE = "jsp/user.jsp";
     private static final String ERROR_PAGE = "jsp/error.jsp";
     
-    private static final Logger LOGGER = LogManager.getRootLogger();
+    private static final Logger LOGGER = LogManager.getLogger(ViewUserCommand.class.getName());
 
     private static final String NICKNAME = "nickname";
 
@@ -38,7 +38,7 @@ public class ViewUserCommand implements Command {
         User user;
         UserService userService = ServiceFactory.getInstance().getUserService();
         try {
-            user = userService.showUserByLogin(login);
+            user = userService.viewUserByLogin(login);
             request.setAttribute(REQUEST_ATTRIBUTE, user);
             request.getRequestDispatcher(USER_PAGE).include(request, response);
         } catch (ServiceException e) {

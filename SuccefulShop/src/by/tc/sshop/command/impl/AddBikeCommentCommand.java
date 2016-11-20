@@ -24,7 +24,7 @@ public class AddBikeCommentCommand implements Command {
     private static final String ERROR = "Error!";
     private static final String MESSAGE_OF_ERROR = "Attention! Comment was not added.";
     
-    private static final Logger LOGGER = LogManager.getRootLogger();
+    private static final Logger LOGGER = LogManager.getLogger(AddBikeCommentCommand.class.getName());
 
     private static final String IDBike = "idBike";
     private static final String IDUser = "idUser";

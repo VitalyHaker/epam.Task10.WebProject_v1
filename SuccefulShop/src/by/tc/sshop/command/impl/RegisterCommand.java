@@ -23,7 +23,7 @@ public class RegisterCommand implements Command {
     private static final String ERROR_FIELDS = "Please, complete all fields in the registration form.";
     private static final String ERROR_INVALID_LOGIN_PASSWORD = "Attention! Login or password are invalid.";
     
-    private static final Logger LOGGER = LogManager.getRootLogger();
+    private static final Logger LOGGER = LogManager.getLogger(RegisterCommand.class.getName());
     
     private static final String USER = "user";
     private static final String LOGIN = "login";

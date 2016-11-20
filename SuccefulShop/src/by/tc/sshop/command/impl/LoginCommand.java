@@ -25,7 +25,7 @@ public class LoginCommand implements Command {
     private static final String MESSAGE_ENTER_LOGIN_PASS = "Please, enter your login and password.";
     private static final String MESSAGE_WRONG_LOGIN_PASS = "Sorry, your login or password is wrong!";
 
-    private static final Logger LOGGER = LogManager.getRootLogger();
+    private static final Logger LOGGER = LogManager.getLogger(LoginCommand.class.getName());
     
     private static final String USER = "user";
     private static final String LOGIN = "login";

@@ -6,7 +6,7 @@ import by.tc.sshop.service.exception.ServiceException;
 import java.util.List;
 
 public interface BikeService {
-    //Bike viewBikeId(String id) throws ServiceException;
+    Bike viewBikeById(String id) throws ServiceException;
     List<Bike> viewFullList() throws ServiceException;
     List<Bike> viewBikesBrand(String brand) throws ServiceException;
     List<Bike> viewBikesWheeldiam(String wheeldiam) throws ServiceException;

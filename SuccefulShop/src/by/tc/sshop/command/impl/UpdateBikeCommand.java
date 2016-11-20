@@ -25,7 +25,7 @@ public class UpdateBikeCommand implements Command {
     private static final String ERROR_REPORT = "Bike is not updated.";
     private static final String ERROR_REPORT_INPUT = "Bike is notupdated, error input";
 
-    private static final Logger LOGGER = LogManager.getRootLogger();
+    private static final Logger LOGGER = LogManager.getLogger(UpdateBikeCommand.class.getName());
 
     private static final String IDBIKE = "idbike";
     private static final String BRAND = "brand";

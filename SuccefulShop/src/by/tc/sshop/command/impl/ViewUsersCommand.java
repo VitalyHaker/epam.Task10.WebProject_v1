@@ -25,7 +25,7 @@ public class ViewUsersCommand implements Command {
     private static final String ERROR = "Error!";
     private static final String ERROR_NO_USERS = "No users.";
     
-    private static final Logger LOGGER = LogManager.getRootLogger();
+    private static final Logger LOGGER = LogManager.getLogger(ViewUsersCommand.class.getName());
 
     private static final String REQUEST_ATTRIBUTE = "all_users";
 

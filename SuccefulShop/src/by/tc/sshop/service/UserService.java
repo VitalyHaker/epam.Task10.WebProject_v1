@@ -4,5 +4,5 @@ import by.tc.sshop.bean.entity.User;
 import by.tc.sshop.service.exception.ServiceException;
 
 public interface UserService {
-    User showUserByLogin(String login) throws ServiceException;
+    User viewUserByLogin(String login) throws ServiceException;
 }

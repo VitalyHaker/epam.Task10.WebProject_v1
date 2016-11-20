@@ -56,6 +56,7 @@ public class BikeSqlDAO implements BikeDAO {
                 Bike = new Bike();
                 Bike.setIdBike(rs.getInt(IDBIKE));
                 Bike.setBrand(rs.getString(BRAND));
+                Bike.setModel(rs.getString(MODEL));
                 Bike.setWheeldiam(rs.getInt(WHEELDIAM));
                 Bike.setAppointment(rs.getString(APPOINTMENT));
                 Bike.setSex(rs.getString(SEX));
@@ -117,6 +118,7 @@ public class BikeSqlDAO implements BikeDAO {
                 Bike = new Bike();
                 Bike.setIdBike(rs.getInt(IDBIKE));
                 Bike.setBrand(rs.getString(BRAND));
+                Bike.setModel(rs.getString(MODEL));
                 Bike.setWheeldiam(rs.getInt(WHEELDIAM));
                 Bike.setAppointment(rs.getString(APPOINTMENT));
                 Bike.setSex(rs.getString(SEX));
@@ -178,6 +180,7 @@ public class BikeSqlDAO implements BikeDAO {
                 Bike = new Bike();
                 Bike.setIdBike(rs.getInt(IDBIKE));
                 Bike.setBrand(rs.getString(BRAND));
+                Bike.setModel(rs.getString(MODEL));
                 Bike.setWheeldiam(rs.getInt(WHEELDIAM));
                 Bike.setAppointment(rs.getString(APPOINTMENT));
                 Bike.setSex(rs.getString(SEX));
@@ -221,7 +224,7 @@ public class BikeSqlDAO implements BikeDAO {
         }
     }
 
-    /*@Override
+    @Override
     public Bike viewBikeById(int idBike) throws DAOException {
         Connection con = null;
         PreparedStatement st = null;
@@ -279,7 +282,6 @@ public class BikeSqlDAO implements BikeDAO {
             }
         }
     }
-    */
 
     @Override
     public void addBike(String brand, String model, int wheeldiam, String appointment, String sex, String manufacturer,

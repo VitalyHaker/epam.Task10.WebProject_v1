@@ -7,7 +7,7 @@ import java.math.BigDecimal;
 import java.util.List;
 
 public interface BikeDAO {
-	//    Bike viewBikeId(int id) throws DAOException;
+	Bike viewBikeById(int id) throws DAOException;
     List<Bike> fullList() throws DAOException;
     List<Bike> viewBikesBrand(String brand) throws DAOException;
     List<Bike> viewBikesWheeldiam(int wheeldiam) throws DAOException;

@@ -1,6 +1,7 @@
 package by.tc.sshop.service.impl;
 
 import by.tc.sshop.bean.entity.Bike;
+import by.tc.sshop.bean.entity.Comment;
 import by.tc.sshop.dao.DAOFactory;
 import by.tc.sshop.dao.intface.BikeDAO;
 import by.tc.sshop.dao.exception.DAOException;
@@ -63,8 +64,8 @@ public class BikeServiceImpl implements BikeService {
         return bikes;
     }
 
-    /*@Override
-    public Bike showBikeByID(String idBike) throws ServiceException {
+    @Override
+    public Bike viewBikeById(String idBike) throws ServiceException {
         DAOFactory daoFactory = DAOFactory.getInstance();
         BikeDAO dao = daoFactory.getBikeDAO();
         CommentDAO CommentDAO = daoFactory.getCommentDAO();
@@ -74,13 +75,13 @@ public class BikeServiceImpl implements BikeService {
         try {
         	idBikeParse = Integer.parseInt(idBike);
         } catch (NumberFormatException e) {
-            throw new ServiceException("No bikes by ID");
+            throw new ServiceException("No bikes by Id");
         }
         try {
             bike = dao.viewBikeById(idBikeParse);
             if (bike != null) {
-                commentList = commentDAO.getCommentsForBike(idBikeParse);
-                Bike.setComments(CommentList);
+                CommentList = CommentDAO.getCommentsForBike(idBikeParse);
+                //Comment.setComment(CommentList);
             } else {
                 throw new ServiceException("Our shop has no bikes according your parameters.");
             }
@@ -89,7 +90,7 @@ public class BikeServiceImpl implements BikeService {
         }
         return bike;
     }
-*/
+
     @Override
     public void addBike(String brand, String model, String wheeldiam, String appointment, String sex, String manufacturer,
     		String framesize, String framematerial, String equipment, String image, String description,
@@ -172,6 +173,5 @@ public class BikeServiceImpl implements BikeService {
             throw new ServiceException("Source error.", e);
         }
     }
-
 
 }

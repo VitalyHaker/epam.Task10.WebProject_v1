@@ -19,15 +19,15 @@ public class AddBikeCommand implements Command {
     private static final String CONTENT_TYPE = "text/html; charset=UTF-8";
     private static final String CHARACTER_ENCODING = "UTF-8";
     
-    private static final String ADD_BIKE_PAGE = "jsp/addBike.jsp";
+    private static final String ADD_BIKE_PAGE = "jsp/bikes.jsp";
     private static final String START_PAGE = "index.jsp";
     private static final String ERROR_PAGE = "jsp/error.jsp";
     
     private static final String ERROR = "Error!";
     private static final String ERROR_REPORT = "Bike is not added.";
-    private static final String ERROR_REPORT_INPUT = "Bike is not added, error input";
+    private static final String ERROR_REPORT_INPUT = "Bike is not added, error input.";
     
-    private static final Logger LOGGER = LogManager.getRootLogger();
+    private static final Logger LOGGER = LogManager.getLogger(AddBikeCommand.class.getName());
 
     private static final String BRAND = "brand";
     private static final String MODEL = "model";
